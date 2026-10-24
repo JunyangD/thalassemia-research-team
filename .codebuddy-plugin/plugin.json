@@ -1,0 +1,140 @@
+{
+  "name": "thalassemia-research-team",
+  "version": "1.0.0",
+  "description": "A multi-agent research team for thalassemia and blood genetic disease research, led by an orchestrator that routes tasks to customizable specialist agents.",
+  "author": {
+    "name": "windyy",
+    "email": ""
+  },
+  "agents": [
+    "./agents/thalassemia-research-team-lead.md",
+    "./agents/librarian.md",
+    "./agents/thalassemia-expert.md",
+    "./agents/data-engineer.md",
+    "./agents/research-advisor.md",
+    "./agents/business-strategist.md",
+    "./agents/medical-professor.md",
+    "./agents/science-illustrator.md",
+    "./agents/maintenance-engineer.md"
+  ],
+  "skills": [
+    "./skills/team-onboarding",
+    "./skills/academic-research-skills",
+    "./skills/pubmed-verifier",
+    "./skills/academic-figures",
+    "./skills/anti-defensive-writing",
+    "./skills/docx-anti-defensive-writing",
+    "./skills/agent-team-delivery-discipline"
+  ],
+
+  "expertType": "team",
+  "agentName": "thalassemia-research-team-lead",
+  "teamInfo": {
+    "leadAgent": "thalassemia-research-team-lead",
+    "memberAgents": [
+      "librarian",
+      "thalassemia-expert",
+      "data-engineer",
+      "research-advisor",
+      "business-strategist",
+      "medical-professor",
+      "science-illustrator",
+      "maintenance-engineer"
+    ]
+  },
+
+  "displayName": {
+    "en": "Thalassemia Research Team",
+    "zh": "地贫科研团队"
+  },
+  "profession": {
+    "en": "Thalassemia Research Team",
+    "zh": "地贫科研团队"
+  },
+  "displayDescription": {
+    "en": "A coordinated research team for thalassemia and blood genetic diseases, covering literature, experiments, data analysis, grant planning, business plans, medical study, scientific illustration and environment operations.",
+    "zh": "面向地贫与血液遗传病研究的智能协作团队，覆盖文献、实验、数据、规划、商业、医学、配图与环境运维。"
+  },
+  "avatar": "avatars/team.png",
+  "categoryId": "12-IndustryConsultant",
+  "defaultInitPrompt": {
+    "zh": "我是第一次使用，请先引导我完成团队初始化。",
+    "en": "This is my first time — guide me through setting up the team."
+  },
+  "plugin": "thalassemia-research-team",
+  "tags": [
+    { "en": "Thalassemia Research", "zh": "地中海贫血研究" },
+    { "en": "Literature & Data", "zh": "文献与数据分析" },
+    { "en": "Research Planning", "zh": "科研项目规划" }
+  ],
+  "quickPrompts": [
+    { "en": "This is my first time — guide me through setting up the team.", "zh": "我是第一次使用，请先引导我完成团队初始化。" },
+    { "en": "Set up my working folder and show me the team structure.", "zh": "帮我建好工作文件夹，并告诉我团队结构。" },
+    { "en": "Search the last five years of thalassemia literature and archive it.", "zh": "检索近五年地贫相关文献并整理入库。" }
+  ],
+  "members": [
+    {
+      "id": "thalassemia-research-team-lead",
+      "displayName": { "en": "Da Guanjia", "zh": "大管家" },
+      "profession": { "en": "Research Orchestrator", "zh": "科研调度总监" },
+      "avatar": "avatars/thalassemia-research-team-lead.png",
+      "role": "lead"
+    },
+    {
+      "id": "librarian",
+      "displayName": { "en": "Guanzhang", "zh": "馆长" },
+      "profession": { "en": "Knowledge Base Librarian", "zh": "知识库馆长" },
+      "avatar": "avatars/librarian.png",
+      "role": "member"
+    },
+    {
+      "id": "thalassemia-expert",
+      "displayName": { "en": "Dipin Guanjia", "zh": "地贫管家" },
+      "profession": { "en": "Thalassemia Research Expert", "zh": "地贫研究专家" },
+      "avatar": "avatars/thalassemia-expert.png",
+      "role": "member"
+    },
+    {
+      "id": "data-engineer",
+      "displayName": { "en": "Daima Zhuanjia", "zh": "代码专家" },
+      "profession": { "en": "Data Analysis Engineer", "zh": "数据分析工程师" },
+      "avatar": "avatars/data-engineer.png",
+      "role": "member"
+    },
+    {
+      "id": "research-advisor",
+      "displayName": { "en": "Keyan Guwen", "zh": "科研顾问" },
+      "profession": { "en": "Research Project Planner", "zh": "科研项目规划师" },
+      "avatar": "avatars/research-advisor.png",
+      "role": "member"
+    },
+    {
+      "id": "business-strategist",
+      "displayName": { "en": "Shangye Jutou", "zh": "商业巨头" },
+      "profession": { "en": "Business Strategist", "zh": "商业策划师" },
+      "avatar": "avatars/business-strategist.png",
+      "role": "member"
+    },
+    {
+      "id": "medical-professor",
+      "displayName": { "en": "Yixue Jiaoshou", "zh": "医学教授" },
+      "profession": { "en": "Medical Educator", "zh": "医学讲师" },
+      "avatar": "avatars/medical-professor.png",
+      "role": "member"
+    },
+    {
+      "id": "science-illustrator",
+      "displayName": { "en": "Huitu Shi", "zh": "绘图师" },
+      "profession": { "en": "Scientific Illustrator", "zh": "科研绘图师" },
+      "avatar": "avatars/science-illustrator.png",
+      "role": "member"
+    },
+    {
+      "id": "maintenance-engineer",
+      "displayName": { "en": "Weihu Shi", "zh": "维护师" },
+      "profession": { "en": "Server Environment Engineer", "zh": "服务器环境运维工程师" },
+      "avatar": "avatars/maintenance-engineer.png",
+      "role": "member"
+    }
+  ]
+}
